@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'thicode'
+app.secret_key = os.getenv("SENHA1")
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
